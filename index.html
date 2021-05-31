@@ -1,0 +1,84 @@
+<html>
+<head>
+
+
+ 
+	<link rel = "stylesheet" href = "style.css" >
+	</head>
+	<title> My Grocery Shop </title>
+	
+
+	<body> 
+
+
+		
+		<!-- Tab Buttons with tab links and onlick -->
+		
+			<h1> Welcome to Mirage Groceries </h1>
+			<div class = "tab">
+				<button class = "tablinks" onclick = "openInfo(event, 'myClient')">Client </button>
+				<button class = "tablinks" onclick = "openInfo(event, 'myProducts')">Products</button>
+				<button class = "tablinks" onclick = "openInfo(event, 'myCart')">Cart</button>
+			</div>
+		
+
+		<!--My Tab Content -->
+		<div id ="myClient" class ="tabcontent">
+			<h2> Client Information </h2>
+			<p> Tell us about yourself </p>
+			Choose a category:
+
+			<select id = "dietSelect" name = "dietSelect" onchange = "populateListProductChoices(this.id, 'displayProduct')">
+				<option value = ""></option>
+				<option value = "Vegetarian">Vegetarian</option>
+				<option value = "GlutenFree">Glutent Free</option>
+				<option value ="LactoseIntolerant"> Lactose Intolerant </option>
+				<option value ="NutAllergy"> Nut Allergy </option>
+				<option value = "None"> None </option>
+
+			</select>
+		</div>
+
+			
+		<!-- Product -->
+		<div id = "myProducts" class = "tabcontent">
+
+			<h2> Your targeted products </h2>
+
+			Choose items to buy:
+			<div id ="displayProduct"></div>
+			<button id = "addCart" type = "button" class = "block" onclick = "selectedItems()">
+				Add selected items to card
+			</button>
+		</div>
+
+
+		<!--Cart -->
+		<div id = "myCart" class = "tabcontent">
+			<h2> Cart </h2>
+			<div id = "displayCart"></div>
+		</div>
+
+
+		
+		<!--Ignore
+
+		<p id = "demo"> Hi </p>
+		<button type ="button" onclick = "document.getElementById('demo').innerHTML = 'This is Javascript'"> Click Me! </button>
+-->
+
+
+
+
+
+<footer>
+  Website designed by Mirage
+</footer>
+
+<script src = "main.js"> </script>
+<script src = "groceries.js"> </script>
+
+	</body>
+
+
+</html>
