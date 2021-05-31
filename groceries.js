@@ -86,7 +86,7 @@ var products = [
 		glutenFree: true,
 		lactoseFree: true,
 		nutFree:true,
-		price: 0.79
+		price: 1.99
 	},
 ];
 	
