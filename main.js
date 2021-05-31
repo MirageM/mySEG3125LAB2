@@ -88,7 +88,7 @@ function selectedItems() {
   // add paragraph and total price
   c.appendChild(para);
   c.appendChild(
-    document.createTextNode("Total Price is")
+    document.createTextNode("Total Price :")
   )
   c.innerHTML += "<b> $" +  getTotalPrice(chosenProducts) + "</b>"
   ;
